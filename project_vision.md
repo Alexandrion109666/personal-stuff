@@ -9,7 +9,7 @@ The purpose of this application is to facilitate the medical examination process
 The scope is to create a digital version of all the information about all medical examination, medical referal, schedule, clinic stuff data and all the necessary information for a specialized clinic dedicated to people with diabetes.
 
 ## Definitions, Acronyms, and Abbreviations
-All these informations is specified in project glossary.
+All these informations are specified in project glossary.
 
 ## References
 http://diabetmed.ro/#/
