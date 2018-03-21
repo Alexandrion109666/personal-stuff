@@ -1,28 +1,28 @@
-# Aplicatie educationala Vision
+# DiabClinics Vision
 
 # Introduction
 
 ## Purpose
-Viziunea asupra acestui sistem este de a familiariza toti utilizatorii cum functioneaza aplicatia..
+The purpose of this application is to facilitate the medical examination process and related operations.
 
 ## Scope
-Scopul aplicatiei este de a tine o evidenta a notelor si absentelor elevilor, si o mai buna informare a parintilor asupra evolutiei academice a copiilor lor si o mai buna gestiune asupra notelor si absentelor elevilor de catre profesori.
+The scope is to create a digital version of all the information about all medical examination, medical referal, schedule, clinic stuff data and all the necessary information for a specialized clinic dedicated to people with diabetes.
 
 ## Definitions, Acronyms, and Abbreviations
-Vezi Project_Glossary.
+All these informations is specified in project glossary.
 
 ## References
-https://www.softschool.ro/
+http://diabetmed.ro/#/
 
-https://www.catalog-scolar.ro/
+http://www.astecomedical.ro/diabetolog-cluj-clinica-de-diabet-asteco
 
-https://www.tutorialspoint.com/java/index.htm
+https://www.stackoverflow.com
 
-https://www.tutorialspoint.com/mysql/index.htm
+https://spring.io/
 
 ## Overview
-Acest document explica pe scurt scopul aplcatiei, definitiile unor elemente esentiale din cadrul ei 
-si cum este organizata.
+This document explains the scope of the aplication, definitions of some essential elements like organizational information regarding the application.
+
 
 # Positioning
 ## Problem Statement
@@ -30,22 +30,22 @@ si cum este organizata.
 
 |||
 |----|------- |
-| **The problem of** | Gestionare mai buna a catalogului
-| **affects**  | Pierderea de timp si energie
-| **the impact of which is** |  Toti utilizatorii
-| **a successful solution would be** | Vor putea vizualiza situatia scolara de acasa
+| **The problem of** | A more efficient, easy and reliable way to create and persist medical examination process and related operations informations.
+| **affects**  | Doctors, nurses and patients
+| **the impact of which is** |  The loss of time and the possibility of losing information about patients 
+| **a successful solution would be** | Streamlining the entire process
 
 ## Product Position Statement
 
 
 |||
 |----|------- |
-| **For** | Toti utilizatorii |
-| **Who** | Toti utilizatorii |
-| **The** | Catalog online
-| **That** | Simplu de folosit si cu o interfata simpla. 
-| **Unlike** | Softschool
-| **Our product** | Aplicatie Desktop
+| **For** | Doctors and Nurses |
+| **Who** | Doctors and Nurses |
+| **The** | DiabClinics
+| **That** | Streamlining the entire process 
+| **Unlike** | The current proces
+| **Our product** | DiabClinics a desktop application
 
 
 # Stakeholder and User Descriptions
@@ -54,25 +54,21 @@ si cum este organizata.
 
 | Name | Description | Responsibilities  	|
 |---	|---	|---	|
-|  Administrator 	| Administreaza baza de date si intreaga aplicatie  	| Operatii CRUD  	|
-|  Elev 	|  Vizualizare situatie scolara 	|   	|
-|  Parinte	|  Vizualizare situatie scolara 	|   	|
-| Profesor | Vizualizare situatie scolara si acordare note |
+|  Administrator 	| Adminstrates all data about clinic stuff  	| CRUD operations 	|
+|  Doctor or Nurse 	|  CRUD operations on schedule, creating medical referral, visaulising history of medical investigation	|
 
 ## User Summary
 
 | Name | Description | Responsibilities  	| Stakeholder |
 |---	|---	|---	|---  |
-|  Administrator 	| Persoana care are toate drepturile asupra aplicatiei  	| Operatii CRUD, gestionare utilizatori, verificare si mentinere baza de date 	| Echipa IT| 
-|  Elev 	|  Persoana care foloseste aplicatia	|   	|      |
-|  Parinte	|  Persoana care foloseste aplicatia	|   	|     |
-| Profesor | Persoana care foloseste aplicatia |      |
+|  Administrator 	| Person who has all the rights regarding the clinic stuff infromations  	| CRUD operations| application maintenance
+|  Docotor or Nurse 	|  Person who use the application	|   	|      |
 
 ## User Environment
-Interfata simpla, prietenoasa, pentru a putea fi utilizata de oricine, fie el elev, parinte sau profesor.
+User frendly interface, very easy to learn and use, this will facilitate a lot creation and persitance of the medical examination process.
 
 # Product Requirements
-   Produsul va putea fi functional pe orice dispozitiv de tip Desktop, cu Java runtime environment (JRE) instalat si MySQL pentru conexiunea la baza de date.
+   Product will run on any device, platform that has JRE instaled on it and a MYSql server instance also.
 
 # Bibliography
 
