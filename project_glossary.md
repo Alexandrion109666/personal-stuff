@@ -1,7 +1,7 @@
-# Aplicatie educationala Glossary
+# DiabClinics Glossary
 
 # Introduction
-Acest document descrie toate abreverile si termenii folositi pentru descrierea acestui proiect.
+This document describes all the abbreviations
 
 #	Glossary
 
@@ -15,5 +15,5 @@ Acest document descrie toate abreverile si termenii folositi pentru descrierea a
 |  JRE 	|   Java Runtime Environment	|   	|   	|
 |  JDBC 	|   Java Database Connectivity	|   	|   	|
 |  MVC 	|   Model-View-Controller	|   	|   	|
-|  Administrator | The user that has access to the database and can perform any operation on products and account | Username Password Admin access | Correct username and password and admin access flag |
-|  User account	| The result of an successful register  	| Username Password Email First name Last name  	| Password with minimum 8 characers, including uppercase and lowercase and a numeric character |
+|  Administrator | The user that has access to the database and all the data regarding the clinic staff, can perform any operation on clinic staff data | Username Password Admin access | Correct username and password and admin access flag |
+|  Doctor/Nurse	| The result of an successful register  	| Username Password Email First name Last name  	| Password with minimum 8 characers, including uppercase and lowercase and a numeric character |
