@@ -1,39 +1,39 @@
-# Aplicatie educationala Supplementary Specification
+# DiabClinics Supplementary Specification
 
 # Introduction
-Acest document cuprinde cerintele de sistem care nu sunt incluse in modelul cazurilor de utilizare. Aceste cerinte cuprind:
-- Cerințe  de reglementare, inclusiv standardul de aplicare
-- Atributele de calitate ale sistemului care urmează să fie construite, inclusiv cerințele de utilizare, fiabilitate, performanță și sustenabilitate.
-- Alte cerințe, cum ar fi sistemul de operare și mediile, cerințele de compatibilitate și constrângerile de proiectare.
+This document includes system requirements that were not included in use case model. The requirements are:
+
+- Regulatory requirements, including the standard of application
+- The quality attributes of the system to be built, including requirements for use, reliability, performance and sustainability.
+- Other requirements, such as operating system and environments, compatibility requirements and design constraints.
 
 # Non-functional Requirements
-
-Sistemul ar trebui să fie tot timpul cu toate informațiile la zi, conectat la server și să se salveze informațiile în timp real, fără să se piardă. Acest lucru va fi posibil folosind CRUD de catre administrator pentru a modifica baza de date.
+The system should always be up-to-date, connected to the server and save the information in real-time without losing it. This will be possible using the CRUD by the administrator to modify the database.
 
 ## Availability
 
-Va fi valabil pe fiecare calculator conectat la internet.
+It will be valid on every computer connected to the Internet.
 
 ## Performance
 
-Una dintre cele mai importante cerințe nefuncționale ale clienților este un sistem cu o rată de performanță bună și rapidă. Prin urmare, obiectivul de performanță este împărțit în trei sub-obiective: timpul, spațiul și răspunsul. Fiecare cerere către server este procesată cât mai repede posibil și răspunsul sau eroarea sunt trimise înapoi utilizatorului
+One of the most important non-functional requirements of customers is a system with a good and fast performance rate. Therefore, the performance objective is divided into three sub-objectives: time, space and response. Each request to the server is processed as quickly as possible and the response or error is sent back to the user.
 
 ## Security
 
-Un utilizator are acces numai la datele sale personale, după o autentificare reușită. O parolă validă este un șir care are minimum 8 caractere, care conține atât litere mari, cât și litere mici și un caracter numeric. Va fi sigur, datele vor fi protejate intr-o baza de date, iar fiecare utilizator are anumite drepturi care nu vor putea fi incarcate.
+A user only has access to his or her personal data after successful authentication. A valid password is a string that has at least 8 characters, which contains both uppercase and lowercase letters and a numeric character. It will be safe, the data will be protected in a database, and each user has certain rights that can not be loaded.
 
 ## Testability
 
-Acesta poate fi testat la inceput local, pentru a vedea toate problemele cu acest sistem. Voi folosi JUnit teste si testare manuala sau/si automata.
+It can be tested locally at the beginning to see all the problems with this system. I will use JUnit tests and manual and / or automatic testing.
 
 ## Usability
 
-Va putea fi utilizat de orice persoana fizica, care are cunostinte minime despre utilizarea unui calculator.
+It can be used by any individual who has minimal knowledge of using a computer.
 
 # Design Constraints
 
-Proiectul va fi implementat in limbajul Java, fiind un limbaj de programare de nivel inalt, impreuna cu Windowbuilder  care va fi utilizat pentru  interfata grafica, si MySql pentru data de baze unde voi retine informatiile. 
-Utilizatorul va accesa aplicatia, se conecteaza cu datele de logare si in functie de drepturile atribuite poate face diverse operatii.
+The project will be implemented in Java, a high-level programming language, along with the Windowbuilder to be used for the graphical interface, and MySql for the baseline where I will retain the information.
+The user will access the application, connect with login data, and depending on assigned rights, can do various operations.
 
 
 # Resources
