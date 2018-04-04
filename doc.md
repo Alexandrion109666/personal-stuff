@@ -27,48 +27,50 @@ employee.
    - Security: Authentication mechanism
    - Testable: Modules are easily tested
    - Usability
+   - Maintenance
+   - Easy way to add new functionalities
 # Use-Case Model
 
 ## Use case 1
 
     * Use case: Authentication
-    * Level: one of: User-goal
-    * Primary actor: All users
-    * Main success scenario: An user is authenticated successfully
-    * Extensions: The user is warned in case of bad credentials
+    * Level: one of: Administrator/Employee-goal
+    * Primary actor: Administrator/Employee
+    * Main success scenario: Administrator/Employee is authenticated successfully
+    * Extensions: Administrator/Employee will be promped if bad credentials were provided
 
 ## Use case 2
 
     * Use case: Add/update/view client information
     * Level: one of: Summary
-    * Primary actor: Front-desk employee
-    * Main success scenario: The user executes successfully those operations
-    * Extensions: None
+    * Primary actor: Bank Employee
+    * Main success scenario: Bank Employee successfully executes these opeartions
+    * Extensions: Bank Employee will be prompted if some wrong informations were provided
 
 ## Use case 3
 
     * Use case: Add/update/view client account
     * Level: one of: Summary
-    * Primary actor: Front-desk employee
-    * Main success scenario: The user executes successfully those operations
-    * Extensions: None
+    * Primary actor: Bank Employee
+    * Main success scenario: Bank Employee successfully executes these opeartions
+    * Extensions: Bank Employee will be prompted if some wrong informations were provided
     
 ## Use case 4
 
     * Use case: Transfer money between accounts
     * Level: one of: Summary
-    * Primary actor: Front-desk employee
-    * Main success scenario: The transaction is done
-    * Extensions: Atomic transactional operations
+    * Primary actor: Bank Employeet
+    * Main success scenario: Bank Employee successfully executes these opeartions
+    * Extensions: Bank Employee will be prompted if some wrong informations were provided
     
     
 ## Use case 5
 
     * Use case: Pay utilities
     * Level: one of: Summary
-    * Primary actor: Front-desk employee
-    * Main success scenario: The payment is done
-    * Extensions: Atomic transactional operations
+    * Primary actor: Bank Employeet
+    * Main success scenario: Bank Employee successfully executes these opeartions
+    * Extensions: Bank Employee will be prompted if some wrong informations were provided
     
 ## Use case 6
 
@@ -76,22 +78,22 @@ employee.
     * Level: one of: Summary
     * Primary actor: Administrator
     * Main success scenario: The administrator executes successfully those operations
-    * Extensions: None
+    * Extensions: Administrator will be prompted if some wrong informations were provided
 
 ## Use case 7
 
     * Use case: Generate reports between dates
     * Level: one of: Summary
     * Primary actor: Administrator
-    * Main success scenario: A PDF is generated
-    * Extensions: None
+    * Main success scenario: A digital report is generated
+    * Extensions: will be prompted if some wrong informations were provided
     
 # System Architectural Design
 
 ## Architectural Pattern Description
-For this bank application we used a 3 layered architecture, that consist of three main layers: **presentation**, **domain/business**, **data/repository**. By segregating an application into tiers, developers acquire the option of modifying or adding a specific layer, instead of reworking the entire application. A three-tier architecture is typically composed of a presentation tier, a domain logic tier, and a data storage tier.
+For this bank application we used a 3 layered architecture, that consist of three main layers: **presentation/view**, **business - logic**, **peristence/dao** and **common**. By segregating an application into modules, developers acquire the option of modifying or adding a specific layer, instead of reworking the entire application. A three-module architecture is typically composed of a presentation module, a business module, and a data storage module.
 
-![layer](arch.jpg)
+![layer](layer.png)
 
 ## Diagrams
 
