@@ -108,34 +108,29 @@ For this bank application we used a 3 layered architecture, that consist of thre
 # Class Design
 
 ## Design Patterns Description
-Strategy Pattern is a behavioral software design pattern that enables selecting an algorithm at runtime. We used this pattern to define our error message for every UI fields.
-We defined an one-method interface that is implemented by different validation algorithms used for specific fields. So when we validate the form we build error messages based on our validations at runtime. 
+In software engineering, the singleton pattern is a software design pattern that restricts the instantiation of a class to one object. This is useful when exactly one object is needed to coordinate actions across the system. The concept is sometimes generalized to systems that operate more efficiently when only one object exists, or that restrict the instantiation to a certain number of objects. 
 
 Usage: 
    ```java
-  private boolean isValid() {
-    StringBuilder errorMessages = new StringBuilder();
-    List<String> validationMessages = Arrays
-        .asList(
-            new UsernameFieldValidationMessage().validate(usernameField.getText()),
-            new EmailValidationMessage().validate(emailField.getText()),
-            new PasswordFieldValidationMessage().validate(passwordField.getText()));
-    for (String msg : validationMessages) {
-      errorMessages.append(msg);
-    }
-    if (errorMessages.length() == 0) {
-     return true;
-    } else {
-      Alert alert = new Alert(AlertType.ERROR);
-      alert.initOwner(dialogStage);
-      alert.setTitle("Invalid Fields");
-      alert.setHeaderText("Please correct all the fields.");
-      alert.setContentText(errorMessages.toString());
-      alert.showAndWait();
-      return false;
-    }
-  }
+  package main;
+
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+public class ApplicationContext {
+
+	private static final ClassPathXmlApplicationContext CTX = new ClassPathXmlApplicationContext(
+			"classpath*:/bllContextConfiguration.xml");
+	public static String employeeCNP;
+	public static Long employeeId;
+
+	private ApplicationContext() {
+	}
+
+	public static ClassPathXmlApplicationContext getApplicationContext() {
+		return CTX;
+	}
 }
+
 ```
 ## UML Class Diagram
 ![strategy](strategy.png)
@@ -147,6 +142,6 @@ Usage:
 As testing technique we used integration test for services. We test the client and bank service. Our test runned with success. 
 
 # Bibliography
-- [Strategy Design Pattern](https://en.wikipedia.org/wiki/Strategy_pattern)
+- [Strategy Design Pattern](https://en.wikipedia.org/wiki/Singleton_pattern)
 - [Drawing Software](http://draw.io)
 - [Multitier architecture](https://en.wikipedia.org/wiki/Multitier_architecture)
