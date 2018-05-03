@@ -59,7 +59,7 @@ employee.
 
     * Use case: Transfer money between accounts
     * Level: one of: Summary
-    * Primary actor: Bank Employeet
+    * Primary actor: Bank Employee
     * Main success scenario: Bank Employee successfully executes these opeartions
     * Extensions: Bank Employee will be prompted if some wrong informations were provided
     
@@ -68,7 +68,7 @@ employee.
 
     * Use case: Pay utilities
     * Level: one of: Summary
-    * Primary actor: Bank Employeet
+    * Primary actor: Bank Employee
     * Main success scenario: Bank Employee successfully executes these opeartions
     * Extensions: Bank Employee will be prompted if some wrong informations were provided
     
@@ -93,15 +93,15 @@ employee.
 ## Architectural Pattern Description
 For this bank application we used a 3 layered architecture, that consist of three main layers: **presentation/view**, **business - logic**, **peristence/dao** and **common**. By segregating an application into modules, developers acquire the option of modifying or adding a specific layer, instead of reworking the entire application. A three-module architecture is typically composed of a presentation module, a business module, and a data storage module.
 
-![layer](layer.png)
+![layer](images/layers.png)
 
 ## Diagrams
 
 # Package
-![package](package.png)
+![package](images/modules.png)
 
 # UML Sequence Diagrams
-![seq](sequence.png)
+![seq](images/sequence.png)
 
 *Authentication Sequence*
 
@@ -133,11 +133,12 @@ public class ApplicationContext {
 
 ```
 ## UML Class Diagram
-![strategy](strategy.png)
+![strategy](images/stpattern.jpg)
 # Data Model
-![models](models.PNG)
+![models](images/uml.png)
 # Database schema
-![db](db.png)
+![db](images/bd.PNG.png)
+![dbb](images/db1.png)
 # System Testing
 As testing technique we used integration test for services. We test the client and bank service. Our test runned with success. 
 
