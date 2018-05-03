@@ -3,24 +3,21 @@
 # Requirement analysis
 
 ## Assignment Specification
-Use JAVA/C# API to design and implement an application for the front desk employees of a
-bank. The application should have two types of users (a regular user represented by the front
-desk employee and an administrator user) which have to provide a username and a password in
-order to use the application.
+Use Java/C# API to design and implement an application for the employees of a book store. The
+application should have two types of users (a regular user represented by the book store
+employee and an administrator user) which have to provide a username and a password in order
+to use the application.
 
 ## Function requirements
 The regular user can perform the following operations:
-- Add/update/view client information (name, identity card number, personal numerical
-code, address, etc.).
-- Create/updatc/delete/view client account (account information: identification number,
-type, amount of money, date of creation).
-- Transfer money between accounts.
-- Process utilities bills.
+- Search books by genre, title, author.
+- Sell books.
 
-The administrator user can perform the following operations:
-- CRUD on employees information.
-- Generate reports for a particular period containing the activities performed by an
-employee.
+The administrator can perform the following operations:
+- CRUD on books (book information: title, author, genre, quantity, and price).
+- CRUD on regular users’ information.
+- Generate two types of reports files, one in pdf format and one in csv format, with the
+books out of stock.
 
 
 ## Non-functional Requirements
@@ -41,57 +38,50 @@ employee.
 
 ## Use case 2
 
-    * Use case: Add/update/view client information
+    * Use case: Search books by genre, title, author
     * Level: one of: Summary
-    * Primary actor: Bank Employee
-    * Main success scenario: Bank Employee successfully executes these opeartions
-    * Extensions: Bank Employee will be prompted if some wrong informations were provided
+    * Primary actor: Store Employee
+    * Main success scenario: Store Employee successfully executes these opeartions
+    * Extensions: Store Employee will be prompted if some wrong informations were provided
 
 ## Use case 3
 
-    * Use case: Add/update/view client account
+    * Use case: Sell books
     * Level: one of: Summary
-    * Primary actor: Bank Employee
-    * Main success scenario: Bank Employee successfully executes these opeartions
-    * Extensions: Bank Employee will be prompted if some wrong informations were provided
+    * Primary actor: Store Employee
+    * Main success scenario: Store Employee successfully executes these opeartions
+    * Extensions: Store Employee will be prompted if some wrong informations were provided
     
 ## Use case 4
 
-    * Use case: Transfer money between accounts
+    * Use case: CRUD on books (book information: title, author, genre, quantity, and price).
     * Level: one of: Summary
-    * Primary actor: Bank Employee
-    * Main success scenario: Bank Employee successfully executes these opeartions
-    * Extensions: Bank Employee will be prompted if some wrong informations were provided
+    * Primary actor: Administrator
+    * Main success scenario: Administrator successfully executes these opeartions
+    * Extensions: Administrator will be prompted if some wrong informations were provided
     
     
 ## Use case 5
 
-    * Use case: Pay utilities
+    * Use case: CRUD on regular users’ information.
     * Level: one of: Summary
-    * Primary actor: Bank Employee
-    * Main success scenario: Bank Employee successfully executes these opeartions
-    * Extensions: Bank Employee will be prompted if some wrong informations were provided
+    * Primary actor: Administrator
+    * Main success scenario: Administrator successfully executes these opeartions
+    * Extensions: Administrator will be prompted if some wrong informations were provided
     
 ## Use case 6
 
-    * Use case: CRUD on employees
+    * Use case: Generate two types of reports files, with the books out of stock.
     * Level: one of: Summary
     * Primary actor: Administrator
-    * Main success scenario: The administrator executes successfully those operations
+    * Main success scenario: Administrator executes successfully those operations
     * Extensions: Administrator will be prompted if some wrong informations were provided
 
-## Use case 7
-
-    * Use case: Generate reports between dates
-    * Level: one of: Summary
-    * Primary actor: Administrator
-    * Main success scenario: A digital report is generated
-    * Extensions: will be prompted if some wrong informations were provided
     
 # System Architectural Design
 
 ## Architectural Pattern Description
-For this bank application we used a 3 layered architecture, that consist of three main layers: **presentation/view**, **business - logic**, **peristence/dao** and **common**. By segregating an application into modules, developers acquire the option of modifying or adding a specific layer, instead of reworking the entire application. A three-module architecture is typically composed of a presentation module, a business module, and a data storage module.
+For this book-store application I used a 3 layered architecture, that consist of three main layers: **presentation/view**, **business - logic**, **peristence/dao** and **common**. By segregating an application into modules, developers acquire the option of modifying or adding a specific layer, instead of reworking the entire application. A three-module architecture is typically composed of a presentation module, a business module, and a data storage module.
 
 ![layer](images/layers.png)
 
